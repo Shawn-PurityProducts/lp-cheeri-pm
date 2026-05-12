@@ -112,7 +112,7 @@ function CloseOfferD() {
         <div style={closeDStyles.card}>
           <div style={closeDStyles.headerBand}>
             <h2 style={{ ...closeDStyles.h, margin: 0, fontSize: 'clamp(32px, 3.6vw, 48px)', color: 'var(--paper)' }}>
-              Get Your First Jar Of Cheerific<sup className="tm">{'™'}</sup> For 50% Off (Plus A Free Gift)
+              Get Your First Box Of Cheerific<sup className="tm">{'™'}</sup> For 50% Off (Plus A Free Gift)
             </h2>
           </div>
           <div style={closeDStyles.body}>
@@ -140,7 +140,7 @@ function CloseOfferD() {
           I Want To Feel Like Myself Again
         </button>
         <span style={closeDStyles.ctaMeta}>
-          50% off your first jar · free gift included
+          50% off your first box · free gift included
         </span>
           </div>
         </div>
