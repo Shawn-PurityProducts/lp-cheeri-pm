@@ -681,6 +681,10 @@ function BuyD() {
           <div style={{ ...buyDStyles.introRating, justifyContent: 'center' }}>
             <span style={buyDStyles.introStars}>{'\u2605\u2605\u2605\u2605\u2605'}</span>
             <span><strong style={{color: 'var(--ink)'}}>4.9</strong> stars</span>
+            <span style={{color: 'var(--rule)', margin: '0 4px'}}>|</span>
+            <span>126 reviews</span>
+            <span style={{color: 'var(--rule)', margin: '0 4px'}}>|</span>
+            <span>10K+ mornings</span>
           </div>
         </div>
       </section>
@@ -718,18 +722,16 @@ function BuyD() {
                   <p style={buyDStyles.offerCardTitle}>Subscribe & Save</p>
                   <span style={buyDStyles.offerPriceCluster}>
                     <span style={buyDStyles.priceNow}>$24.95</span>
-                    <span style={buyDStyles.priceWas}>$49.95</span>
+                    <span style={buyDStyles.priceWas}>$39.95</span>
                   </span>
                 </div>
                 <p style={{...buyDStyles.perDay, margin: '-6px 0 14px'}}>
-                  $1.66 per day · delivered every 30 days
+                  Just $1.66 per chocolate reset • 15 replenished every 30 days
                 </p>
                 <ul style={buyDStyles.perks}>
-                  <li style={buyDStyles.perk}><span style={buyDStyles.perkCheck}>{'\u2713'}</span><span>15 servings, delivered every 30 days</span></li>
-                  <li style={buyDStyles.perk}><span style={buyDStyles.perkCheck}>{'\u2713'}</span><span>FREE shipping, always</span></li>
-                  <li style={buyDStyles.perk}><span style={buyDStyles.perkCheck}>{'\u2713'}</span><span>Pause or cancel anytime</span></li>
-                  <li style={buyDStyles.perk}><span style={buyDStyles.perkCheck}>{'\u2713'}</span><span>30-day money back guarantee</span></li>
-                  <li style={buyDStyles.perk}><span style={buyDStyles.perkCheck}>{'\u2713'}</span><span>A free gift with your first delivery</span></li>
+                  <li style={buyDStyles.perk}><span style={buyDStyles.perkCheck}>{'\u2713'}</span><span><strong>50% off today</strong> + 20% off every future delivery</span></li>
+                  <li style={buyDStyles.perk}><span style={buyDStyles.perkCheck}>{'\u2713'}</span><span>Countertop ritual dispenser + free shaker cup included</span></li>
+                  <li style={buyDStyles.perk}><span style={buyDStyles.perkCheck}>{'\u2713'}</span><span><strong>FREE shipping</strong> • adjust sachets anytime • pause/cancel anytime</span></li>
                 </ul>
                 <button type="button" style={buyDStyles.cta} onClick={() => window.CHEERI_SHOP.go('subscription')}>
                   Start Now
