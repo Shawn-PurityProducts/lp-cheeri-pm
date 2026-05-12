@@ -722,7 +722,7 @@ function BuyD() {
                   </span>
                 </div>
                 <p style={{...buyDStyles.perDay, margin: '-6px 0 14px'}}>
-                  $0.83 per day · delivered every 30 days
+                  $1.66 per day · delivered every 30 days
                 </p>
                 <ul style={buyDStyles.perks}>
                   <li style={buyDStyles.perk}><span style={buyDStyles.perkCheck}>{'\u2713'}</span><span>15 servings, delivered every 30 days</span></li>
