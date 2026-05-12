@@ -496,13 +496,13 @@ const buyDStyles = {
 
 function BuyImageD() {
   const photos = [
-    '../CheeriPak/Sachet Tile Image 1.png',
-    '../CheeriPak/Sachet Tile Image 2.png',
-    '../CheeriPak/Sachet Tile Image 3.png',
-    '../CheeriPak/Sachet Tile Image 4.png',
-    '../CheeriPak/Sachet Tile Image 5.png',
-    '../CheeriPak/Sachet Tile Image 6.png',
-    '../CheeriPak/Sachet Tile Image 7.png',
+    'CheeriPak/Sachet Tile Image 1.png',
+    'CheeriPak/Sachet Tile Image 2.png',
+    'CheeriPak/Sachet Tile Image 3.png',
+    'CheeriPak/Sachet Tile Image 4.png',
+    'CheeriPak/Sachet Tile Image 5.png',
+    'CheeriPak/Sachet Tile Image 6.png',
+    'CheeriPak/Sachet Tile Image 7.png',
   ];
   const [active, setActive] = React.useState(0);
   return (
