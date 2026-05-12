@@ -726,7 +726,7 @@ function BuyD() {
                   </span>
                 </div>
                 <p style={{...buyDStyles.perDay, margin: '-6px 0 14px'}}>
-                  Just $1.66 per chocolate reset • 15 replenished every 30 days
+                  Just $1.66 per chocolate reset every 30 days
                 </p>
                 <ul style={buyDStyles.perks}>
                   <li style={buyDStyles.perk}><span style={buyDStyles.perkCheck}>{'\u2713'}</span><span><strong style={{color:'var(--brand-green)'}}>50% off today</strong> + 20% off every future delivery</span></li>
