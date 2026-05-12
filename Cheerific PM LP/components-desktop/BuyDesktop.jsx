@@ -729,9 +729,9 @@ function BuyD() {
                   Just $1.66 per chocolate reset • 15 replenished every 30 days
                 </p>
                 <ul style={buyDStyles.perks}>
-                  <li style={buyDStyles.perk}><span style={buyDStyles.perkCheck}>{'\u2713'}</span><span><strong>50% off today</strong> + 20% off every future delivery</span></li>
+                  <li style={buyDStyles.perk}><span style={buyDStyles.perkCheck}>{'\u2713'}</span><span><strong style={{color:'var(--brand-green)'}}>50% off today</strong> + 20% off every future delivery</span></li>
                   <li style={buyDStyles.perk}><span style={buyDStyles.perkCheck}>{'\u2713'}</span><span>Countertop ritual dispenser + free shaker cup included</span></li>
-                  <li style={buyDStyles.perk}><span style={buyDStyles.perkCheck}>{'\u2713'}</span><span><strong>FREE shipping</strong> • adjust sachets anytime • pause/cancel anytime</span></li>
+                  <li style={buyDStyles.perk}><span style={buyDStyles.perkCheck}>{'\u2713'}</span><span><strong style={{color:'var(--brand-green)'}}>FREE shipping</strong> • adjust sachets anytime • pause/cancel anytime</span></li>
                 </ul>
                 <button type="button" style={buyDStyles.cta} onClick={() => window.CHEERI_SHOP.go('subscription')}>
                   Start Now
