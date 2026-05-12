@@ -483,7 +483,7 @@ function Buy() {
               '20% off every future order',
               'Free shipping, always',
               'A free gift with your first delivery',
-              'That\u2019s less than 83¢ a day for a creamy mug of chocolate built for this stretch of life.',
+              'That\u2019s less than $1.66 a day for a creamy mug of chocolate built for this stretch of life.',
             ]}
           />
           <BuyOption
