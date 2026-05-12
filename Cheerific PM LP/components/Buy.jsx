@@ -360,11 +360,13 @@ const buyStyles = {
 
 function BuyImage({ label }) {
   const photos = [
-    'assets/product/p1-hero-v2.webp',
-    'assets/product/how-new.webp',
-    'assets/supplement-facts.webp',
-    'assets/product/tile-testimonial.webp',
-    'assets/product/p6.webp',
+    '../CheeriPak/Sachet Tile Image 1.png',
+    '../CheeriPak/Sachet Tile Image 2.png',
+    '../CheeriPak/Sachet Tile Image 3.png',
+    '../CheeriPak/Sachet Tile Image 4.png',
+    '../CheeriPak/Sachet Tile Image 5.png',
+    '../CheeriPak/Sachet Tile Image 6.png',
+    '../CheeriPak/Sachet Tile Image 7.png',
   ];
   const [active, setActive] = React.useState(0);
   return (
@@ -446,7 +448,7 @@ function Buy() {
        <div style={buyStyles.card}>
         <div style={buyStyles.headerBand}>
           <h2 style={buyStyles.headerH}>
-            Cheerific<sup className="tm">{'™'}</sup> · Dark Chocolate Superfood Elixir
+            CheeriPack<sup className="tm">{'™'}</sup> Grab-and-Go Chocolate Ritual
           </h2>
         </div>
         <div style={buyStyles.body}>
@@ -458,7 +460,7 @@ function Buy() {
           <div className="buy-cols-info">
 
         <p style={buyStyles.productSub}>
-          30 servings · Cocoa, 17 organic superfoods, Chocamine®, CP2305 postbiotic
+          15 servings · Cocoa, 17 organic superfoods, Chocamine®, CP2305 postbiotic
         </p>
         <div style={buyStyles.rating}>
           <span style={buyStyles.stars}>{'\u2605\u2605\u2605\u2605\u2605'}</span>
@@ -490,7 +492,7 @@ function Buy() {
             onSelect={setPlan}
             title="One-Time Purchase"
             priceNow="$49.95"
-            desc="One jar. No subscription. No commitment."
+            desc="One box. No subscription. No commitment."
           />
         </div>
 

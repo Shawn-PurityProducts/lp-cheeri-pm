@@ -286,7 +286,7 @@ function CloseOffer() {
        <div style={closeOfferStyles.card}>
         <div style={closeOfferStyles.headerBand}>
           <h2 style={closeOfferStyles.headerH}>
-            Get Your First Jar Of Cheerific<sup className="tm">{'™'}</sup> For 50% Off (Plus A Free Gift)
+            Get Your First Box Of Cheerific<sup className="tm">{'™'}</sup> For 50% Off (Plus A Free Gift)
           </h2>
         </div>
         <div style={closeOfferStyles.body}>

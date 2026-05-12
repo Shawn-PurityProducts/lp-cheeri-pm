@@ -496,11 +496,13 @@ const buyDStyles = {
 
 function BuyImageD() {
   const photos = [
-    'assets/product/p1-hero-v2.webp',
-    'assets/product/how-new.webp',
-    'assets/supplement-facts.webp',
-    'assets/product/tile-testimonial.webp',
-    'assets/product/p6.webp',
+    '../CheeriPak/Sachet Tile Image 1.png',
+    '../CheeriPak/Sachet Tile Image 2.png',
+    '../CheeriPak/Sachet Tile Image 3.png',
+    '../CheeriPak/Sachet Tile Image 4.png',
+    '../CheeriPak/Sachet Tile Image 5.png',
+    '../CheeriPak/Sachet Tile Image 6.png',
+    '../CheeriPak/Sachet Tile Image 7.png',
   ];
   const [active, setActive] = React.useState(0);
   return (
@@ -671,10 +673,10 @@ function BuyD() {
       <section style={buyDStyles.intro} data-screen-label="04 Buy Intro">
         <div style={buyDStyles.introInner}>
           <h2 style={buyDStyles.introHeadline}>
-            Cheerific<sup className="tm">{'\u2122'}</sup> {'\u2014'} Dark Chocolate Superfood Elixir.
+            CheeriPack<sup className="tm">{'\u2122'}</sup> Grab-and-Go Chocolate Ritual
           </h2>
           <p style={buyDStyles.introSub}>
-            30 servings of cocoa, 17 organic superfoods, Chocamine{'\u00ae'}, and CP2305 postbiotic.
+            15 servings of cocoa, 17 organic superfoods, Chocamine{'\u00ae'}, and CP2305 postbiotic.
           </p>
           <div style={{ ...buyDStyles.introRating, justifyContent: 'center' }}>
             <span style={buyDStyles.introStars}>{'\u2605\u2605\u2605\u2605\u2605'}</span>
@@ -723,7 +725,7 @@ function BuyD() {
                   $0.83 per day · delivered every 30 days
                 </p>
                 <ul style={buyDStyles.perks}>
-                  <li style={buyDStyles.perk}><span style={buyDStyles.perkCheck}>{'\u2713'}</span><span>30 servings, delivered every 30 days</span></li>
+                  <li style={buyDStyles.perk}><span style={buyDStyles.perkCheck}>{'\u2713'}</span><span>15 servings, delivered every 30 days</span></li>
                   <li style={buyDStyles.perk}><span style={buyDStyles.perkCheck}>{'\u2713'}</span><span>FREE shipping, always</span></li>
                   <li style={buyDStyles.perk}><span style={buyDStyles.perkCheck}>{'\u2713'}</span><span>Pause or cancel anytime</span></li>
                   <li style={buyDStyles.perk}><span style={buyDStyles.perkCheck}>{'\u2713'}</span><span>30-day money back guarantee</span></li>
@@ -759,7 +761,7 @@ function BuyD() {
                   <span style={buyDStyles.optionPriceRow}>
                     <span style={buyDStyles.priceNow}>$49.95</span>
                   </span>
-                  <span style={buyDStyles.perDay}>$1.66 per day</span>
+                  <span style={buyDStyles.perDay}>$3.33 per day</span>
                 </span>
                 {plan === 'onetime' && (
                   <span

@@ -193,8 +193,8 @@ function Faq() {
       ],
     },
     {
-      q: 'How many scoops are in one canister?',
-      a: ['There are 30 scoops in one canister — a full month of daily rituals.'],
+      q: 'How many sachets are in one box?',
+      a: ['There are 15 sachets in one box — a 15-day supply of daily rituals.'],
     },
     {
       q: 'How does subscribe and save work?',
