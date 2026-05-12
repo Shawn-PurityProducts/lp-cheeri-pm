@@ -327,7 +327,7 @@ function CloseOffer() {
           >
             I Want To Feel Like Myself Again
             <span style={closeOfferStyles.ctaSub}>
-              50% off your first jar · free gift included
+              50% off your first box · free gift included
             </span>
           </button>
         </div>

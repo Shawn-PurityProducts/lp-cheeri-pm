@@ -509,7 +509,7 @@ function BuyImageD() {
     <div>
       <div style={buyDStyles.imgPh}>
         <div style={buyDStyles.promoStrip}>
-          {'\u2728'} Limited time offer: 50% off your first jar {'\u2728'}
+          {'\u2728'} Limited time offer: 50% off your first box {'\u2728'}
         </div>
         <img src={photos[active]} alt="Cheerific product" style={buyDStyles.imgPhPhoto} />
       </div>
