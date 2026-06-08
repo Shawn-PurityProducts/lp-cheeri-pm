@@ -282,6 +282,8 @@
       document.cookie = name + '=' + v + '; path=/; expires=' + exp + '; SameSite=Lax';
     }
     window.CHEERI_AB = v;
+    gtag('set', 'user_properties', { ab_variant: v });
+    gtag('event', 'ab_variant_view', { variant: v });
   })();
 </script>
 <!-- Vercel Web Analytics -->
