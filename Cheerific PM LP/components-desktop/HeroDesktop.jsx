@@ -1,6 +1,8 @@
 // HeroDesktop.jsx — Desktop hero w/ 3 variants: split / editorial / overlay
 // Plus the long-form Intro block beneath the hero (full editorial column).
 
+const _headlineOverrideD = window.CHEERI_HEADLINE || null;
+
 const heroDStyles = {
   // Promo bar
   promoBar: {
@@ -424,10 +426,7 @@ function HeroSplit() {
               textAlign: 'center',
             }}
           >
-            If Your 2pm Coffee Stopped Hitting The Way It Used To,{' '}
-            <span style={heroDStyles.splitH1Accent}>
-              Here's What Thousands Of Women Are Drinking Instead.
-            </span>
+            {_headlineOverrideD || (<>If Your 2pm Coffee Stopped Hitting The Way It Used To,{' '}<span style={heroDStyles.splitH1Accent}>Here's What Thousands Of Women Are Drinking Instead.</span></>)}
           </h1>
         </div>
       </div>
@@ -443,7 +442,7 @@ function HeroEditorialD() {
         <div style={heroDStyles.editorialWrap}>
           <p style={heroDStyles.editorialIssue}>— Issue No. 01 · For The Woman In Between —</p>
           <h1 style={heroDStyles.editorialH1}>
-            If Your 2pm Coffee Stopped Hitting The Way It Used To, Here's What Thousands Of Women Are Drinking Instead.
+            {_headlineOverrideD || "If Your 2pm Coffee Stopped Hitting The Way It Used To, Here's What Thousands Of Women Are Drinking Instead."}
           </h1>
           <div style={heroDStyles.editorialRule}></div>
           <div style={heroDStyles.editorialImg}>
@@ -488,8 +487,7 @@ function HeroCoverD() {
         <span style={heroDStyles.coverImgLabel}>HERO · FULL BLEED</span>
         <div style={heroDStyles.coverInner}>
           <h1 style={heroDStyles.coverH1}>
-            If Your 2pm Coffee Stopped Hitting The Way It Used To,{' '}
-            <span style={heroDStyles.coverH1Accent}>Here's What Thousands Of Women Are Drinking Instead.</span>
+            {_headlineOverrideD || (<>If Your 2pm Coffee Stopped Hitting The Way It Used To,{' '}<span style={heroDStyles.coverH1Accent}>Here's What Thousands Of Women Are Drinking Instead.</span></>)}
           </h1>
           <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
             <button

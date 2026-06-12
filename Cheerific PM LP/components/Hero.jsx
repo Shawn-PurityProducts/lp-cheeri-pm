@@ -1,6 +1,8 @@
 // Hero.jsx — promo bar, nav, hero with CTA + social proof
 // Three layout variations exposed via tweaks: stacked / split / overlay
 
+const _headlineOverride = window.CHEERI_HEADLINE || null;
+
 const heroStyles = {
   // Promo bar
   promoBar: {
@@ -379,8 +381,7 @@ function HeroStacked() {
         <div className="hero-stacked-row">
           <div>
             <h1 style={heroStyles.h1}>
-              If Your 2pm Coffee Stopped Hitting The Way It Used To, Here's What Thousands Of Perimenopausal Women Are Drinking Instead{' '}
-              <span style={heroStyles.h1Accent}>(7 Reasons)</span>
+              {_headlineOverride || (<>If Your 2pm Coffee Stopped Hitting The Way It Used To, Here's What Thousands Of Perimenopausal Women Are Drinking Instead{' '}<span style={heroStyles.h1Accent}>(7 Reasons)</span></>)}
             </h1>
           </div>
           <div className="hero-image-wrap">
@@ -418,8 +419,7 @@ function HeroEditorial() {
           — Issue No. 01 —
         </div>
         <h1 style={{ ...heroStyles.h1, textAlign: 'center', fontSize: 'clamp(26px, 7vw, 36px)' }}>
-          If Your 2pm Coffee Stopped Hitting The Way It Used To, Here's What Thousands Of Perimenopausal Women Are Drinking Instead{' '}
-          <span style={heroStyles.h1Accent}>(7 Reasons)</span>
+          {_headlineOverride || (<>If Your 2pm Coffee Stopped Hitting The Way It Used To, Here's What Thousands Of Perimenopausal Women Are Drinking Instead{' '}<span style={heroStyles.h1Accent}>(7 Reasons)</span></>)}
         </h1>
         <p style={{ ...heroStyles.sub, textAlign: 'center', maxWidth: 460, margin: '0 auto 18px' }}>
           Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
@@ -473,8 +473,7 @@ function HeroOverlay() {
             ...heroStyles.h1, color: 'var(--paper)', margin: '0 0 8px',
             fontSize: 'clamp(22px, 5.8vw, 30px)',
           }}>
-            If Your 2pm Coffee Stopped Hitting The Way It Used To, Here's What Thousands Of Perimenopausal Women Are Drinking Instead{' '}
-            <span style={{ ...heroStyles.h1Accent, color: 'var(--green)' }}>(7 Reasons)</span>
+            {_headlineOverride || (<>If Your 2pm Coffee Stopped Hitting The Way It Used To, Here's What Thousands Of Perimenopausal Women Are Drinking Instead{' '}<span style={{ ...heroStyles.h1Accent, color: 'var(--green)' }}>(7 Reasons)</span></>)}
           </h1>
           <p style={{ ...heroStyles.sub, color: 'rgba(255,255,255,0.86)', margin: 0 }}>
             Consectetur adipiscing elit, sed do eiusmod.
