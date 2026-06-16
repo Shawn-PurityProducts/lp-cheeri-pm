@@ -4,8 +4,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <title>Cheeri · Landing Page</title>
-<link rel="canonical" href="https://lp-pm-cheerific.vercel.app/" />
-<meta property="og:url" content="https://lp-pm-cheerific.vercel.app/" />
+<link rel="canonical" href="https://lp-pm-cheerific.vercel.app/?utm_source=vercel&utm_medium=landing_page&utm_campaign=pm" />
+<meta property="og:url" content="https://lp-pm-cheerific.vercel.app/?utm_source=vercel&utm_medium=landing_page&utm_campaign=pm" />
 <!-- Microsoft Clarity (analytics + heatmaps; fires on every load — mobile & desktop) -->
 <script type="text/javascript">
   (function(c,l,a,r,i,t,y){
@@ -253,7 +253,10 @@
       params.forEach((value, key) => {
         if (/^utm_/i.test(key)) utms.push(key + '=' + encodeURIComponent(value));
       });
-      const checkoutQuery = utms.length ? '?' + utms.join('&') : '';
+      if (!utms.length) {
+        utms.push('utm_source=vercel', 'utm_medium=landing_page', 'utm_campaign=pm');
+      }
+      const checkoutQuery = '?' + utms.join('&');
       // Encode the checkout path so its inner `&` separators survive Shopify's
       // redirect chain (cart/clear → cart/add → /checkout). Without this,
       // /cart/add splits return_to at the first `&` and only the first UTM rides through.
