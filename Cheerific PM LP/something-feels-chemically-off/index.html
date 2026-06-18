@@ -27,6 +27,12 @@
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '7161920017238575');
   fbq('track', 'PageView');
+  fbq('track', 'ViewContent', {
+    content_name: 'Cheerific PM',
+    content_type: 'product',
+    content_ids: ['51764215906602'],
+    currency: 'USD',
+  });
 </script>
 <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=7161920017238575&ev=PageView&noscript=1"
@@ -243,7 +249,7 @@
      Edit values here when variant IDs / plans change. */
   window.CHEERI_SHOP = {
     domain: 'https://www.cheerific.com',
-    variantId: '51514508673322',
+    variantId: '51764215906602',
     subscriptionPlanId: '10800759082',
     checkoutUrl(plan) {
       const base = this.domain + '/cart/clear?return_to=';
@@ -263,6 +269,19 @@
       return base + encodeURIComponent(inner);
     },
     go(plan) {
+      // Fire the Meta InitiateCheckout conversion event before redirecting.
+      // fbq uses sendBeacon, so the event survives the navigation below.
+      if (window.fbq) {
+        fbq('track', 'InitiateCheckout', {
+          content_name: 'Cheerific PM',
+          content_type: 'product',
+          content_ids: [this.variantId],
+          contents: [{ id: this.variantId, quantity: 1 }],
+          currency: 'USD',
+          // 'subscription' or 'onetime'
+          plan: plan || 'onetime',
+        });
+      }
       window.location.href = this.checkoutUrl(plan);
     },
   };
