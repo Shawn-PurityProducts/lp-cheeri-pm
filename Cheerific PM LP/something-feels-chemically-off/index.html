@@ -254,13 +254,16 @@
     checkoutUrl(plan) {
       const base = this.domain + '/cart/clear?return_to=';
       const sellingPlan = plan === 'subscription' ? '&items[][selling_plan]=' + this.subscriptionPlanId : '';
-      // Forward every utm_* param from the landing page URL to the Shopify checkout.
+      // Forward utm_* params and ad click IDs (gclid, fbclid, etc.) from the landing
+      // page URL to the Shopify checkout so ad attribution survives the hand-off.
       const params = new URLSearchParams(window.location.search);
-      const utms = [];
+      const tracking = [];
       params.forEach((value, key) => {
-        if (/^utm_/i.test(key)) utms.push(key + '=' + encodeURIComponent(value));
+        if (/^(utm_|(gclid|fbclid|ttclid|msclkid|gbraid|wbraid)$)/i.test(key)) {
+          tracking.push(key + '=' + encodeURIComponent(value));
+        }
       });
-      const checkoutQuery = utms.length ? '?' + utms.join('&') : '';
+      const checkoutQuery = tracking.length ? '?' + tracking.join('&') : '';
       // Encode the checkout path so its inner `&` separators survive Shopify's
       // redirect chain (cart/clear → cart/add → /checkout). Without this,
       // /cart/add splits return_to at the first `&` and only the first UTM rides through.
